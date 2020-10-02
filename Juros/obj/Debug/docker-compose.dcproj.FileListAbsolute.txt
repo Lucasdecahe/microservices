@@ -1,0 +1,14 @@
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\appsettings.Development.json
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\appsettings.json
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Properties\launchSettings.json
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Juros.Calculo.exe
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Juros.Calculo.dll
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\bin\Debug\Juros.Calculo.pdb
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\obj\Debug\docker-compose.dcproj.CopyComplete

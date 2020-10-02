@@ -1,0 +1,11 @@
+services:
+  juros.calculo:
+    build:
+      context: C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros
+      dockerfile: src\Juros.Calculo\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: juroscalculo
+    ports:
+    - 80/tcp
+version: '3.4'

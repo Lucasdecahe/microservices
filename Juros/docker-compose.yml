@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  juros.calculo:
+    image: ${DOCKER_REGISTRY-}juroscalculo
+    ports:
+        - "5002:5002"
+    build:
+      context: .
+      dockerfile: src\Juros.Calculo\Dockerfile
+
+  juros.taxa:
+    image: ${DOCKER_REGISTRY-}jurostaxa
+    build:
+      context: .
+      dockerfile: src\Juros.Taxa\Dockerfile
+

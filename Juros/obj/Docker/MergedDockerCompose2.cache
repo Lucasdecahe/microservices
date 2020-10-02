@@ -1,0 +1,37 @@
+services:
+  juros.calculo:
+    build:
+      context: C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros
+      dockerfile: src\Juros.Calculo\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Juros.Calculo
+      target: base
+    container_name: Juros.Calculo
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: juroscalculo:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "C:\app\bin\Debug\netcoreapp3.1\Juros.Calculo.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - 80/tcp
+    volumes:
+    - C:\Users\Lucas\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Lucas\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros\src\Juros.Calculo:C:\app:rw
+    - C:\Users\Lucas\onecoremsvsmon\16.5.0101.0:C:\remote_debugger:ro
+    - C:\Users\Lucas\Source\Repos\Lucasdecahe\microservices\Juros:C:\src:rw
+    - C:\Microsoft\Xamarin\NuGet:c:\.nuget\fallbackpackages:ro
+    - C:\Users\Lucas\.nuget\packages:c:\.nuget\packages:ro
+version: '3.4'
